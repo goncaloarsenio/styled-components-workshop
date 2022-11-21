@@ -1,6 +1,11 @@
 # Styled Components + Toastify Workshop
 
-Workshop for the October 2022 cohort of the Web Development Course at Ironhack Lisbon Campus.
+Workshop for the October 2022 Cohort of the Web Development Course at Ironhack Lisbon Campus.
+
+## 
+
+[Ironhack](https://www.ironhack.com/)
+Tech School focused on Web-development, UX/UI Design & Data Analytics bootcamps.
 
 ## 
 
