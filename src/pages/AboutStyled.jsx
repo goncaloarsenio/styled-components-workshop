@@ -1,26 +1,30 @@
 import React from "react";
+
 import scLogo from "../assets/sc-logo.png";
 
 function AboutStyled() {
   return (
     <section>
-      <img src={scLogo} alt="Styled Components Logo" />
-      <article>
-        <p>
-          Utilising tagged template literals and the power of CSS,
-          styled-components allows you to write actual CSS code to style your
-          components. It also removes the mapping between components and styles
-          - using components as a low-level styling construct could not be
-          easier!
-        </p>
-        <a
-          href="https://styled-components.com/docs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <p>Learn more about Styled Components!</p>
-        </a>
-      </article>
+      <div>
+        <img src={scLogo} alt="Styled Components Logo" />
+        <article>
+          <h2>
+            Styled-components allows you to write actual CSS code to style your
+            components. It also removes the mapping between components and
+            styles. Using components as a low-level styling construct could not
+            be easier 👌
+          </h2>
+          <a
+            href="https://styled-components.com/docs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>
+              <h3>Learn more about Styled Components!</h3>
+            </button>
+          </a>
+        </article>
+      </div>
     </section>
   );
 }

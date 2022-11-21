@@ -1,25 +1,48 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+
 import ironhackLogo from "../assets/ironhack-logo.png";
 
 function NavBar() {
+  const location = useLocation();
+  const [url, setUrl] = useState(null);
+
+  useEffect(() => {
+    setUrl(location.pathname);
+  }, [location]);
+
   return (
     <nav>
-      <NavLink to={"/"}>
-        <img src={ironhackLogo} alt="Ironhack Logo" />
-        <h1>Workshop</h1>
-      </NavLink>
+      <ul>
+        <li>
+          <NavLink to={"/"}>
+            <img src={ironhackLogo} alt="Ironhack Logo" />
+          </NavLink>
+        </li>
 
-      <NavLink to={"/styled"}>
-        <h2>About Styled Components</h2>
-      </NavLink>
+        <li>
+          <NavLink to={"/"} className={url === "/" ? "active" : ""}>
+            <h3>Home</h3>
+          </NavLink>
+        </li>
 
-      <NavLink to={"/toasty"}>
-        <h2>About Toastify</h2>
-      </NavLink>
+        <li>
+          <NavLink to={"/styled"} className={url === "/styled" ? "active" : ""}>
+            <h3>About Styled-Components</h3>
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to={"/toasty"} className={url === "/toasty" ? "active" : ""}>
+            <h3>About Toastify</h3>
+          </NavLink>
+        </li>
+      </ul>
 
       <NavLink to={"/login"}>
-        <h2>Login</h2>
+        <button>
+          <h3>Login</h3>
+        </button>
       </NavLink>
     </nav>
   );
