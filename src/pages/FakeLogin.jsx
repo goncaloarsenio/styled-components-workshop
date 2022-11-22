@@ -5,10 +5,10 @@ import loadingSpinner from "../assets/spinner.gif";
 /* Import Your Files Below This Line*/
 
 function FakeLogin() {
-  const navigate = useNavigate();
-
   /* useState To Toggle Loading Spinner */
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   /* Fake handleSubmit Function */
   const fakeLogin = () => {

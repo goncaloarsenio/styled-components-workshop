@@ -1,15 +1,12 @@
-/* Importing React Router Dom */
 import { Routes, Route } from "react-router-dom";
-
-/* Importing Components */
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-
-/* Importing Pages */
 import HomePage from "./pages/HomePage";
 import AboutStyled from "./pages/AboutStyled";
 import AboutToastify from "./pages/AboutToastify";
 import FakeLogin from "./pages/FakeLogin";
+
+/* Import Your Files Below This Line*/
 
 function App() {
   return (
