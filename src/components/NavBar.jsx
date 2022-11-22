@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-
 import ironhackLogo from "../assets/ironhack-logo.png";
 
+/* Import Your Files Below This Line*/
+
 function NavBar() {
+  /* Check Current Tab */
   const location = useLocation();
   const [url, setUrl] = useState(null);
-
   useEffect(() => {
     setUrl(location.pathname);
   }, [location]);

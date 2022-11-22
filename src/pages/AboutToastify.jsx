@@ -1,6 +1,7 @@
 import React from "react";
-
 import toastLogo from "../assets/toast-logo.png";
+
+/* Import Your Files Below This Line*/
 
 function AboutToastify() {
   return (

@@ -1,8 +1,11 @@
+/* Importing React Router Dom */
 import { Routes, Route } from "react-router-dom";
 
+/* Importing Components */
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
+/* Importing Pages */
 import HomePage from "./pages/HomePage";
 import AboutStyled from "./pages/AboutStyled";
 import AboutToastify from "./pages/AboutToastify";

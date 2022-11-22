@@ -1,6 +1,7 @@
 import React from "react";
-
 import scLogo from "../assets/sc-logo.png";
+
+/* Import Your Files Below This Line*/
 
 function AboutStyled() {
   return (
