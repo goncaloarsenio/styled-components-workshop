@@ -20,7 +20,7 @@ function AboutToastify() {
             rel="noreferrer"
           >
             <button>
-              <h3>Learn more about Toastify!</h3>
+              <h3>Learn more about Toastify</h3>
             </button>
           </a>
         </article>

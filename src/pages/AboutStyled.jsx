@@ -21,7 +21,7 @@ function AboutStyled() {
             rel="noreferrer"
           >
             <button>
-              <h3>Learn more about Styled Components!</h3>
+              <h3>Learn more about Styled Components</h3>
             </button>
           </a>
         </article>
