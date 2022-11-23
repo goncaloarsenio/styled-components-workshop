@@ -1,11 +1,13 @@
 import React from "react";
 import toastLogo from "../assets/toast-logo.png";
+import {StyledSection} from '../components/styled/Section.styled'
+import {StyledButton} from '../components/styled/Button.styled'
 
 /* Import Your Files Below This Line*/
 
 function AboutToastify() {
   return (
-    <section>
+    <StyledSection>
       <div>
         <img src={toastLogo} alt="Toastify Logo" />
         <article>
@@ -19,13 +21,13 @@ function AboutToastify() {
             target="_blank"
             rel="noreferrer"
           >
-            <button>
+            <StyledButton>
               <h3>Learn more about Toastify</h3>
-            </button>
+            </StyledButton>
           </a>
         </article>
       </div>
-    </section>
+    </StyledSection>
   );
 }
 
